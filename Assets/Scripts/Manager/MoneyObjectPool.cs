@@ -40,7 +40,7 @@ public class MoneyObjectPool : MonoBehaviour
     {
         obj.SetActive(false);
         obj.transform.parent = transform;
-        obj.transform.DOLocalMove(Vector3.zero, 0);
+        obj.transform.DOLocalMove(Vector3.down*2, 0);
         pooledObjects.Enqueue(obj);
     }
 }

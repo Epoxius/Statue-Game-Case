@@ -41,6 +41,7 @@ public class AppleController : MonoBehaviour
         else
         {
             appleRb.useGravity = true;
+            isGround = false;
         }
 
         if (other.gameObject.CompareTag("Chest"))
